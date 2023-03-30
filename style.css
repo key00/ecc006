@@ -5,6 +5,12 @@
   font-weight: 500;
 }
 
+h4 {
+  font-weight: 700;
+}
+h5 {
+  font-weight: 600;
+}
 .cv {
   display: grid;
   grid-template-columns: 1fr 2fr;
