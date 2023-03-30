@@ -1,0 +1,30 @@
+.cv {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  height: 100vh;
+}
+
+.profile {
+  padding: 20px;
+  background: rgb(251, 251, 255);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-picture {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.resume {
+  background: rgb(236, 229, 229);
+  padding: 20px;
+}
+
+.titles {
+  text-align: center;
+}
