@@ -1,7 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 17px;
+  font-weight: 500;
+}
+
 .cv {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  height: 100vh;
 }
 
 .profile {
@@ -21,10 +27,37 @@
 }
 
 .resume {
+  display: grid;
+  grid-template-columns: 8rem auto;
   background: rgb(236, 229, 229);
+}
+
+.resume-section {
   padding: 20px;
+}
+
+ul {
+  list-style-type: square;
 }
 
 .titles {
   text-align: center;
+  margin-bottom: 20px;
+}
+
+.homework {
+  border-radius: 10px;
+  background: #a6a9be;
+  padding: 10px;
+  color: black;
+}
+
+a.homework {
+  text-decoration: none;
+}
+
+.vertical-line {
+  border-left: 10px solid rgb(100, 95, 179);
+  margin: 0 auto;
+  height: 100%;
 }
