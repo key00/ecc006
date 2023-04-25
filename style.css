@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-* {
+#main-page {
   font-family: "Cormorant Garamond", serif;
   font-size: 17px;
   font-weight: 500;
@@ -66,4 +66,29 @@ a.homework {
   border-left: 10px solid rgb(100, 95, 179);
   margin: 0 auto;
   height: 100%;
+}
+.hw-title {
+  color: rgb(100, 95, 179);
+  font-family: "Cormorant Garamond", serif;
+}
+.hw-body {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 20px;
+  font-size: 18px;
+}
+
+.back-btn {
+  border-radius: 10px;
+  background-color: #a6a9be;
+  border-style: none;
+  margin: 20px;
+  padding: 10px;
+  text-decoration: none;
+  color: rgb(100, 95, 179);
+}
+
+.back-btn:hover {
+  background-color: rgb(100, 95, 179);
+  color: #fff;
 }
