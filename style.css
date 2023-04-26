@@ -115,4 +115,14 @@ a.homework {
   .resume {
     grid-template-columns: 4rem auto;
   }
+  .profile-picture {
+    width: 120px;
+    height: 120px;
+  }
+
+  .vertical-line {
+    border-left: 10px solid rgb(100, 95, 179);
+    margin-left: 70%;
+    height: 100%;
+  }
 }
