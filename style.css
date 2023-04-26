@@ -55,6 +55,7 @@ ul {
   border-radius: 10px;
   background: #a6a9be;
   padding: 10px;
+  margin: 10px;
   color: black;
 }
 
@@ -91,4 +92,27 @@ a.homework {
 .back-btn:hover {
   background-color: rgb(100, 95, 179);
   color: #fff;
+}
+
+.hw-btn {
+  background-color: rgb(100, 95, 179);
+  color: #e6e5e5;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  border-style: none;
+}
+
+@media (max-width: 920px) {
+  .cv {
+    display: block;
+  }
+  .profile {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .resume {
+    grid-template-columns: 4rem auto;
+  }
 }
