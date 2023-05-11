@@ -103,6 +103,10 @@ a.homework {
   border-style: none;
 }
 
+.ans {
+  font-weight: 600;
+}
+
 @media (max-width: 920px) {
   .cv {
     display: block;
