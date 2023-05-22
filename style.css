@@ -107,6 +107,10 @@ a.homework {
   font-weight: 600;
 }
 
+.form-control {
+  width: 30%;
+}
+
 @media (max-width: 920px) {
   .cv {
     display: block;
