@@ -107,7 +107,8 @@ a.homework {
   font-weight: 600;
 }
 
-.form-control {
+.form-control,
+.form-select {
   width: 30%;
 }
 

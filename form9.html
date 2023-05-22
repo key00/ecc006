@@ -46,14 +46,62 @@
 
     <section class="hw-body">
       <form action="" class="hw9_form">
-        <label for="" class="form-label">Name</label>
-        <input type="text" class="form-control" />
-        <label for="" class="form-label pt-2">Email</label>
-        <input type="email" class="form-control" />
-        <label for="" class="form-label mt-2"
-          >Select your favorite type of music</label
-        >
-        <label for="" class="form-label pt-2"></label>
+        <label for="name" class="form-label">Name</label>
+        <input type="text" id="name" class="form-control" />
+        <label for="email" class="form-label pt-2">Email</label>
+        <input type="email" id="email" class="form-control" />
+        <fieldset class="pt-4 pb-4">
+          <legend>What are your favorite genre of music</legend>
+
+          <input
+            type="checkbox"
+            name="genre"
+            id="checkbox1"
+            class="form-check-input"
+          />
+          <label for="checkbox1" class="form-check-label">Pop</label>
+          <input
+            type="checkbox"
+            name="genre"
+            id="checkbox2"
+            class="form-check-input"
+          />
+          <label for="checkbox2" class="form-check-label">Hip-Hop</label>
+          <input
+            type="checkbox"
+            name="genre"
+            id="checkbox3"
+            class="form-check-input"
+          />
+          <label for="checkbox3" class="form-check-label">R&B</label>
+          <input
+            type="checkbox"
+            name="genre"
+            id="checkbox4"
+            class="form-check-input"
+          />
+          <label for="checkbox4" class="form-check-label">Rock</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>How often do you listen to music</legend>
+          <input type="text" name="" id="" class="form-control" />
+        </fieldset>
+
+        <fieldset class="pt-4 pb-4">
+          <legend>What device do you usually use to listen to music</legend>
+          <select name="device" class="form-select">
+            <option value="phone">Phone</option>
+            <option value="laptop">Laptop</option>
+            <option value="tv">TV</option>
+            <option value="car">Car</option>
+          </select>
+        </fieldset>
+
+        <div class="mt-4">
+          <button class="btn btn-outline-success" type="submit">Submit</button>
+          <button class="btn btn-outline-danger" type="reset">Reset</button>
+        </div>
       </form>
     </section>
     <script
