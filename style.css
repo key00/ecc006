@@ -124,10 +124,14 @@ button:checked {
 }
 
 @media (max-width: 920px) {
+  html {
+    width: 100vw;
+  }
   .cv {
     display: block;
   }
   .profile {
+    width: auto;
     flex-direction: row;
     justify-content: space-evenly;
     position: relative;
@@ -137,6 +141,7 @@ button:checked {
     margin-left: 0;
     display: grid;
     grid-template-columns: 4rem auto;
+    width: 100%;
   }
   .profile-picture {
     width: 120px;
@@ -206,6 +211,7 @@ img.actors {
   padding: 10px;
   color: #fff;
   font-weight: 500;
+  margin: 5px;
 }
 .rating button a {
   text-decoration: none;
