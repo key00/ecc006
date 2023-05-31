@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 #main-page {
   font-family: "Cormorant Garamond", serif;
-  font-size: 17px;
+  font-size: 18px;
   font-weight: 500;
 }
 
@@ -116,6 +116,11 @@ a.homework {
 
 button:checked {
   border: 0;
+}
+
+.resume-link {
+  text-decoration: none;
+  color: inherit;
 }
 
 @media (max-width: 920px) {
