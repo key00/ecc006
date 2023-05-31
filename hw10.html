@@ -19,6 +19,10 @@
       href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&display=swap"
       rel="stylesheet"
     />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  </body>
   </head>
   <body>
     <div class="dropdown">
@@ -43,12 +47,168 @@
         <li><a class="dropdown-item" href="hw10.html">HW10</a></li>
       </ul>
     </div>
-    <h4 class="text-center pt-3 hw-title">HOMEWORK 10</h4>
-    <section class="hw-body"></section>
+    <h4 class="text-center pt-3 hw-title">
+      E-commerce Survey Results
+      <span class="name-link">
+        <a href="mailto: kinamugisha@gmail.com">by Keyna L. INAMUGISHA</a></span
+      >
+    </h4>
+    <section class="hw-body">
+
+      <div class="py-3">
+        <p>The survey was done on a total of 30 people in order to find out how popular e-commerce websites are and explore the demographics of online shoppers.<br>
+        Here are the findings: </p>
+        
+      </div>
+      <h5>1. How many have purchased an item online?</h5>
+      &nbsp; -> 24<br>
+      <h5>2. How many have shopped but not purchased online? </h5>
+      &nbsp; -> 8<br>
+
+      <em>From question 3, i only focused on the 24 people who shop online</em>
+      <h5>
+        3. How many purchase online once a year? Once a month? Once a week?
+      </h5>
+      
+      <div id="repetition" style="width: 50%;"></div>
+      
+      <h5>4. What is their age range (18-25, 26-39, 40-50, or over 50)?</h5>
+
+      <div id="age" style="width: 50%;"></div>
+      <h5>5. What is their gender?</h5>
+      
+        
+      <div id="gender" style="width: 50%;"></div>
+      
+      <h5>
+        6. What is their level of education (high school, some college, college
+        graduate, or graduate school)?
+      </h5>
+      
+      <div id="education" style="width: 50%;"></div>
+      
+      <h5>7. What is their favorite online shopping site?</h5>
+      
+      <div id="site" style="width: 50%;"></div>
+      <p class="py-2">
+        In my findings, I can conclude that most of the online shoppers are in the age category 18-25, and are college graduate or with some college experience. <br> 
+        The country they're located in also influenced their shopping behavior: how often they shop and which websites they shop on. <br>
+        The gender has almost no effect in my survey, although it is said that men dominate the stats spending 28% more than women when shopping online. <br>
+        In the <a href="https://kinsta.com/blog/ecommerce-statistics/">Ecommerce Statistics for 2023</a>, it is found that most online shoppers are Millenials and Gen Xers. They spend 50% more time shopping online than others.
+      </p>
+      <p class="pb-3"> Reference: <a href="https://kinsta.com/blog/ecommerce-statistics/">Ecommerce Statistics for 2023</a></p>
+      
+    </section>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
       crossorigin="anonymous"
     ></script>
-  </body>
+    <script>
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawGender);
+      function drawGender() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['',''],
+          ['',0],
+          ['Male', 11],
+          ['Female', 13],
+          
+        ]);
+
+        var options = {
+          title: '',colors: ['#eecab5']
+        };
+
+        var chart = new google.visualization.BarChart(document.getElementById('gender'));
+        chart.draw(data, options);
+
+      }
+
+      // for repetition
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawRepetition);
+      function drawRepetition() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['',''],
+          ['Once a week', 3],
+          ['Once a month', 10],
+          ['Once a year', 9],
+          
+        ]);
+        
+        var options = {
+          title: '',colors: ['#eecab5'],
+        };
+
+        var chart = new google.visualization.BarChart(document.getElementById('repetition'));
+        chart.draw(data, options,);
+
+        }
+
+        // for age
+        google.charts.setOnLoadCallback(drawAge);
+      function drawAge() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['',''],
+          ['18-25', 19],
+          ['26-39', 4],
+          ['40-50', 1],
+          ['Over 50', 0],
+          
+        ]);
+
+        var options = {
+          title: '',colors: ['#eecab5']
+        };
+
+        var chart = new google.visualization.BarChart(document.getElementById('age'));
+        chart.draw(data, options);
+
+      }
+        // for education
+        google.charts.setOnLoadCallback(drawEducation);
+      function drawEducation() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['',''],
+          ['High School', 0],
+          ['Some college', 14],
+          ['College graduate', 13],
+          ['Graduate school',2],
+          
+        ]);
+
+        var options = {
+          title: '',colors: ['#eecab5']
+        };
+
+        var chart = new google.visualization.BarChart(document.getElementById('education'));
+        chart.draw(data, options);
+
+        }
+        // for site
+        google.charts.setOnLoadCallback(drawSite);
+      function drawSite() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['',''],
+          ['Amazon', 8],
+          ['Ali Express', 5],
+          ['Shein', 11],
+          
+        ]);
+
+        var options = {
+          title: '',colors: ['#eecab5']
+        };
+
+        var chart = new google.visualization.BarChart(document.getElementById('site'));
+        chart.draw(data, options);
+
+        }
+    </script>
 </html>

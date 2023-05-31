@@ -145,7 +145,7 @@ button:checked {
   }
 
   .vertical-line {
-    border-left: 10px solid rgb(100, 95, 179);
+    border-left: 10px solid #645fb3;
     margin-left: 70%;
     height: 100%;
   }
@@ -239,4 +239,15 @@ textarea.form-control {
 }
 .form-label {
   font-size: 24px;
+}
+
+/* for hw10 */
+
+.name-link a {
+  text-decoration: none;
+  color: #585757;
+  font-size: 20px;
+}
+.be {
+  color: #eecab5;
 }
