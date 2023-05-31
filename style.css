@@ -75,6 +75,7 @@ a.homework {
   height: 100%;
 }
 .hw-title {
+  font-size: 35px;
   color: rgb(100, 95, 179);
   font-family: "Cormorant Garamond", serif;
 }
@@ -118,6 +119,10 @@ a.homework {
   width: 30%;
 }
 
+button:checked {
+  border: 0;
+}
+
 @media (max-width: 920px) {
   .cv {
     display: block;
@@ -144,4 +149,64 @@ a.homework {
     margin-left: 70%;
     height: 100%;
   }
+}
+
+/* for hw8 */
+.hw8 {
+  height: 80vh;
+  width: 80%;
+  margin: 0px auto;
+  /* background-color: #000; */
+}
+
+.split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100%;
+}
+
+table.table {
+  height: 100%;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+.six {
+  color: rgb(184, 21, 21);
+}
+
+.genre {
+  padding-top: 30px;
+}
+
+.genre button {
+  border-radius: 10px;
+  background-color: transparent;
+  border: 1px rgb(216, 120, 120) solid;
+  padding: 10px;
+  color: rgb(180, 5, 5);
+  font-weight: 500;
+}
+
+.details {
+  margin: 0 auto;
+}
+
+img.actors {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.rating button,
+.rating button a {
+  border-radius: 10px;
+  background-color: #000;
+  border: none;
+  padding: 10px;
+  color: #fff;
+  font-weight: 500;
+}
+.rating button a {
+  text-decoration: none;
 }
